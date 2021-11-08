@@ -1,0 +1,54 @@
+.country__card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 450px;
+}
+
+.country__name {
+  font-size: 40px;
+  text-align: center;
+}
+
+.country__description {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  text-align: left;
+  &-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+    & .languages__list {
+      margin-top: 0;
+      margin-left: 50px;
+      padding: 0;
+    }
+  }
+  &-flag {
+    & .country__flag {
+      display: block;
+    }
+  }
+}
+
+.country__capital {
+  margin-top: 0;
+  &-title {
+    font-weight: 700;
+  }
+}
+
+.country__population {
+  margin-top: 0;
+  &-title {
+    font-weight: 700;
+  }
+}
+
+.country__languages {
+  margin-top: 0;
+  font-weight: 700;
+}
